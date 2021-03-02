@@ -28,4 +28,5 @@ module scroll_count_1(input logic [4:0] col, input logic enb, start1, rst, rstFS
         else if (start1 && enb) count++;
     end
     assign colOff1 = count + col;
+    assign done1 = count==99;
 endmodule
