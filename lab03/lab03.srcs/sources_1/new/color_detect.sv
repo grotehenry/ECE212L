@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/02/2021 02:40:54 PM
+// Create Date: 03/02/2021 02:53:47 PM
 // Design Name: 
-// Module Name: scroll_count_1
+// Module Name: color_detect
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,12 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module scroll_count_1(input logic [4:0] col, input logic enb, start1, rst, rstFSM, clk,
-    output logic [4:0] colOff1, output logic done1);
-    logic count;
-    always_ff @(posedge clk) begin
-        if (rst || rstFSM) count = 0;
-        else if (start1 && enb) count++;
-    end
-    assign colOff1 = count + col;
+module color_detect(input logic R2B, G2B, B2B, clk, rst,
+    output logic R2, G2, B2);
+always_comb begin
+    
+end
 endmodule

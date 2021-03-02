@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/02/2021 02:40:54 PM
+// Create Date: 03/02/2021 02:56:52 PM
 // Design Name: 
-// Module Name: scroll_count_1
+// Module Name: number_count
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,12 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module scroll_count_1(input logic [4:0] col, input logic enb, start1, rst, rstFSM, clk,
-    output logic [4:0] colOff1, output logic done1);
-    logic count;
-    always_ff @(posedge clk) begin
-        if (rst || rstFSM) count = 0;
-        else if (start1 && enb) count++;
-    end
-    assign colOff1 = count + col;
+module number_count(input logic NEXTPB, clk, rst,
+    output logic [5:0] offset = 0);
+always_ff @(posedge clk) begin
+    if (NEXTPB) offset += 6;
+end
 endmodule
