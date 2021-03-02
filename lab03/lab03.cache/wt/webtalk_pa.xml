@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Mar 02 14:31:06 2021">
+<application name="pa" timeStamp="Tue Mar 02 15:25:03 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a6ae1b33cd64495c8b4935e722d54c9a" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -17,442 +17,276 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="4" type="JavaHandler"/>
+<property name="AddSources" value="7" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenFile" value="1" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
 <property name="ToolsTemplates" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="BRAM1.sv, 102, 453, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 108, 469" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 109, 10" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 109, 519" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 110, 450, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 110, 469" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 112, 401" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 113, 440" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 113, 456" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 113, 505" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 114, 486" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 1149, 105" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 115, 416, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 117, 586" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 119, 578" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 129, 131" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 129, 276" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 134, 485" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 136, 147" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 136, 275" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 136, 380" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 141, 162" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 146, 462" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 148, 130" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 151, 113" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 151, 113, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 153, 399" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 154, 328" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 157, 278" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 157, 278, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 163, 427" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 163, 440" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 164, 293" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 164, 293, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 170, 128" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 174, 139" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 181, 141" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 189, 141" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 199, 207" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 2, 9" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 213, 192" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 226, 276" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 234, 341" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 239, 274" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 254, 393" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 260, 463" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 28, 79" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 293, 125" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 296, 221" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 30, 293" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 337, 540" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 355, 266" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 363, 493" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 410, 307" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 428, 611" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 431, 376" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 460, 580" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 47, 381" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 475, 98" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 480, 414" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 529, 213" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 58, 380" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 62, 381" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 639, 404" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 641, 514" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 651, 440" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 666, 518" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 667, 451" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 673, 376, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 677, 499, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 690, 467, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 693, 485, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 704, 299" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 71, 405" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 73, 598" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 730, 414, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 732, 448, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 739, 457" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 769, 446, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 774, 440, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 79, 361" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 80, 591" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 86, 384" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 96, 23" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 98, 300" value="1" type="GuiResourceData"/>
-<property name="BRAM1.sv, 98, 300, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1008, 603" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 102, 484" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1020, 585" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1027, 579" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 103, 533" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1030, 564" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1037, 544" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1038, 585" value="2" type="GuiResourceData"/>
-<property name="BRAM2.sv, 104, 487" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 104, 503" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1043, 566" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1047, 568" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 105, 367" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 105, 401" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 105, 512" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 105, 587" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 105, 598" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1053, 531" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1059, 551" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 106, 384" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1064, 548" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1068, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 107, 450" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 107, 482, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 107, 519" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 108, 417, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 108, 430" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 108, 552" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 108, 572" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 1082, 530" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 109, 483" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 110, 471" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 111, 557" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 111, 569" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 128, 533" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 128, 533, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 129, 545" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 144, 597" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 151, 555" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 152, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 157, 552" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 173, 584" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 174, 574" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 177, 464" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 178, 548" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 178, 548, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 182, 530" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 186, 532" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 186, 549" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 188, 603" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 189, 565" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 192, 602" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 196, 589" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 198, 424" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 198, 424, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 200, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 210, 537" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 223, 551" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 228, 553" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 234, 103" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 237, 557" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 238, 541" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 238, 572" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 239, 588" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 239, 606" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 240, 494" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 245, 337" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 247, 567" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 255, 607" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 256, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 263, 581" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 266, 389" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 272, 533" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 285, 500" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 299, 531" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 301, 523" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 303, 553" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 307, 572" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 309, 603" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 317, 586" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 319, 535" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 319, 554" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 319, 556" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 322, 607" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 323, 589" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 324, 575" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 331, 587" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 334, 535" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 340, 538, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 346, 550" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 357, 585" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 358, 532" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 363, 549" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 365, 605" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 366, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 366, 534, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 366, 553" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 368, 552" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 376, 556" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 376, 571" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 381, 585" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 384, 582" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 384, 602" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 385, 566" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 390, 536" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 392, 302" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 392, 538" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 392, 538, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 392, 539" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 395, 533" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 396, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 404, 393" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 406, 535" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 418, 556" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 425, 533" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 425, 600" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 429, 571" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 432, 574" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 434, 580" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 436, 529" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 436, 529, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 437, 535" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 438, 533" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 439, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 440, 588" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 443, 548" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 444, 553" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 445, 586" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 448, 587" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 448, 619" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 453, 594" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 468, 530" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 478, 548" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 480, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 489, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 490, 554" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 494, 570" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 496, 537" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 496, 569" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 497, 589" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 498, 556" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 503, 536" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 505, 589" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 506, 530" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 506, 530, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 507, 618" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 508, 533" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 508, 555" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 509, 604" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 512, 534" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 512, 585" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 513, 573" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 520, 601" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 523, 500" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 53, 417" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 531, 516" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 541, 614" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 548, 550" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 550, 568" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 552, 592" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 556, 569" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 557, 548" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 559, 546" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 56, 553, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 560, 401" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 561, 599" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 563, 604" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 565, 381" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 570, 364" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 570, 587" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 570, 590" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 576, 346" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 576, 538" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 578, 387" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 578, 398" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 578, 626" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 579, 576" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 581, 369" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 583, 349" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 585, 551" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 592, 573" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 604, 587" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 614, 415" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 614, 588" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 614, 605" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 616, 432" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 616, 571" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 621, 446" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 623, 594" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 624, 475" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 624, 550" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 625, 354, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 625, 500" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 625, 602" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 626, 536" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 627, 487" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 627, 532" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 629, 365, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 630, 517" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 630, 573" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 631, 554" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 631, 625" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 633, 537" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 645, 552" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 650, 553" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 655, 551" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 656, 528" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 656, 556" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 659, 484" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 662, 554" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 663, 468" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 667, 439, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 669, 536" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 678, 421, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 678, 494, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 681, 609" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 689, 585" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 698, 532" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 70, 492" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 715, 389, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 715, 465, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 718, 620" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 719, 606" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 720, 402" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 722, 343" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 723, 642" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 727, 556" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 734, 488" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 736, 486, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 737, 476, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 752, 455, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 79, 382" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 84, 263" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 852, 524, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 888, 618" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 889, 630" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 910, 530" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 937, 356" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 944, 548" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 954, 362" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 955, 539" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 976, 565" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 978, 639" value="2" type="GuiResourceData"/>
-<property name="BRAM2.sv, 980, 557" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 985, 531" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 992, 618" value="1" type="GuiResourceData"/>
-<property name="BRAM2.sv, 995, 541" value="1" type="GuiResourceData"/>
-<property name="FINISH, Finish" value="4" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 113, 52" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 127, 40" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 202, 46" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 236, 67" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 24, 5, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 373, 222" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 375, 168" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 381, 293" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 436, 22" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 483, 94" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 515, 393" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 806, 55" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 808, 59" value="1" type="GuiResourceData"/>
-<property name="LEDScrollerConstraints.xdc, 813, 66" value="1" type="GuiResourceData"/>
-<property name="NEXT, Next " value="4" type="GuiResourceData"/>
-<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, Add or create design sources" value="3" type="GuiResourceData"/>
-<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, Add or create constraints" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, Create File" value="2" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, LEDScrollerConstraints" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, BRAM1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, BRAM2" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, col_count" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 123, 466" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 126, 247" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 164, 365" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 164, 369, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 165, 363" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 170, 364" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 178, 361" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 179, 367" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 180, 373" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 593, 483" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 614, 488" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 614, 488, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="BRAM2.sv, 652, 488, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="3" type="GuiResourceData"/>
+<property name="NEXT, Next " value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, Add or create design sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, color_detect" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, number_count" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, scroll_count_1" value="1" type="GuiResourceData"/>
 <property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, SystemVerilog, 2" value="3" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES, Language Templates" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, LEDScrollerConstraints.xdc], 3, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, LEDScrollerConstraints.xdc], 3, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, BRAM1 (BRAM1.sv" value="4" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, LEDMatrixTopLevel (LEDMatrixTopLevel.sv" value="27" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, BRAM2.sv], 2, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, BRAM2.sv], 2, false, false, false, false, false, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files], 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, LEDMatrixTopLevel (LEDMatrixTopLevel.sv" value="5" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, col_count (col_count.sv" value="3" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 6" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="4" type="GuiResourceData"/>
-<property name="PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, [Templates, Verilog, Common Constructs], 1" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, [Templates, Verilog, Device Macro Instantiation, Artix-7, RAM, Dual Clock FIFO (FIFO_DUALCLOCK_MACRO" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, [Templates, Verilog, Device Macro Instantiation, Artix-7, RAM, Simple Dual Port RAM (BRAM_SDP_MACRO" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, [Templates, Verilog, Device Macro Instantiation, Artix-7, RAM], 5" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, [Templates, Verilog, Device Macro Instantiation, Artix-7], 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, [Templates, Verilog, Device Macro Instantiation], 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, [Templates, Verilog], 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_HELP, Help" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_REPORT, Report" value="4" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="4" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_VIEW, View" value="8" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_WINDOW, Window" value="2" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_CODE, Code" value="8" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, BRAM1 (BRAM1.sv" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, BRAM2 (BRAM2.sv" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, LEDMatrixTopLevel (LEDMatrixTopLevel.sv" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, color_detect (color_detect.sv" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, number_count (number_count.sv" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, scroll_count_1 (scroll_count_1.sv" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug], 23, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="1" type="GuiResourceData"/>
 <property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="3" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_CLOSE, Close" value="1" type="GuiResourceData"/>
 <property name="RDIResource.BaseDialog_OK, OK" value="6" type="GuiResourceData"/>
-<property name="RDIResource.MainWinMenuMgr_LAYOUT, Layout" value="10" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Customize Commands" value="3" type="GuiResourceData"/>
-<property name="col_count.sv, 229, 323" value="1" type="GuiResourceData"/>
-<property name="col_count.sv, 333, 395" value="1" type="GuiResourceData"/>
-<property name="col_count.sv, 345, 259" value="1" type="GuiResourceData"/>
-<property name="col_count.sv, 613, 380" value="1" type="GuiResourceData"/>
-<property name="delay_enb.sv, 199, 304" value="2" type="GuiResourceData"/>
-<property name="delay_enb.sv, 199, 304, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="delay_enb.sv, 216, 485" value="1" type="GuiResourceData"/>
-<property name="delay_enb.sv, 362, 94" value="1" type="GuiResourceData"/>
-<property name="delay_enb.sv, 482, 483" value="1" type="GuiResourceData"/>
-<property name="delay_enb.sv, 501, 421" value="1" type="GuiResourceData"/>
-<property name="fsm.sv, 590, 316" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 121, 357" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 188, 621" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 276, 340" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 276, 340, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 283, 329" value="2" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 283, 329, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 293, 422" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 310, 402" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 314, 397" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 317, 388" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 318, 443" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 318, 481" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 329, 378" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 355, 401" value="1" type="GuiResourceData"/>
-<property name="pixel_gen.sv, 490, 568" value="1" type="GuiResourceData"/>
-<property name="row_count.sv, 1147, 402" value="1" type="GuiResourceData"/>
-<property name="row_count.sv, 796, 319" value="1" type="GuiResourceData"/>
-<property name="sequencer.sv, 316, 212" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 1, 381, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 115, 434" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 115, 473" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 121, 396" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 123, 484" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 128, 437" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 130, 433" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 131, 437, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 133, 400" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 133, 455" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 134, 464" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 135, 440" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 145, 438" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 154, 404" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 156, 433" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 160, 439" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 161, 397" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 161, 431" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 164, 460" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 165, 434" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 172, 455" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 179, 454" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 190, 395" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 194, 437" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 201, 424" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 204, 380" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 212, 445" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 212, 487" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 215, 542" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 216, 427" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 220, 432" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 222, 383" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 222, 420" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 226, 482" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 227, 431" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 229, 418" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 229, 436" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 229, 439" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 230, 409" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 233, 385" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 233, 385, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 236, 432" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 240, 428" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 242, 399" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 245, 408" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 246, 396, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 25, 436, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 250, 430" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 251, 421" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 251, 433" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 253, 437" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 257, 429" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 257, 437" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 259, 385" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 267, 436" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 27, 434" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 275, 385" value="2" type="GuiResourceData"/>
+<property name="color_detect.sv, 277, 437" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 284, 269" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 294, 436" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 295, 431" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 313, 430" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 314, 444" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 316, 428" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 318, 454" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 321, 368" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 322, 384" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 336, 437" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 339, 452" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 341, 474" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 343, 431" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 345, 452, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 348, 430, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 369, 378" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 388, 450" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 425, 541" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 434, 378" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 434, 378, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 480, 542" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 52, 435" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 535, 477" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 55, 433, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 55, 452" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 55, 468, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 56, 436" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 575, 502" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 579, 417" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 636, 524" value="1" type="GuiResourceData"/>
+<property name="color_detect.sv, 97, 453" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 114, 399" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 116, 396" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 123, 440" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 129, 437" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 131, 378" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 165, 400" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 166, 402" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 173, 396" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 183, 438" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 198, 443" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 203, 401, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 208, 447" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 246, 460" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 253, 459" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 284, 425" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 332, 468" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 393, 421" value="1" type="GuiResourceData"/>
+<property name="number_count.sv, 520, 419" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 104, 490" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 104, 543" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 107, 518" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 115, 501" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 116, 404" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 118, 403" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 120, 403, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 125, 404" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 126, 453" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 127, 388" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 128, 394" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 135, 431" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 136, 431, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 137, 401" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 143, 400" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 147, 34" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 153, 447" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 155, 156" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 156, 401" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 157, 407" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 158, 403" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 159, 261" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 165, 401" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 165, 438" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 166, 402" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 182, 405" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 187, 521" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 188, 470" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 188, 519" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 189, 501" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 202, 398" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 208, 500" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 208, 500, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 210, 522" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 217, 398" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 223, 451" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 224, 409" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 225, 509" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 227, 493" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 235, 384" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 235, 393" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 236, 382" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 237, 380" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 239, 379" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 240, 379" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 244, 376" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 247, 369" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 247, 469" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 248, 396" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 252, 212" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 252, 212, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 252, 487" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 258, 382" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 269, 391" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 270, 446, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 273, 134" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 275, 433" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 278, 449" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 282, 480" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 283, 520" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 284, 585" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 284, 600" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 287, 416" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 291, 489" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 292, 513" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 296, 384" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 299, 502" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 302, 466" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 302, 617" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 314, 393" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 314, 475" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 329, 381" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 329, 383" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 332, 435" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 334, 381" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 334, 381, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 334, 383" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 34, 433, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 340, 391" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 341, 562" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 349, 466, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 35, 438, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 358, 535" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 365, 387" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 376, 286" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 376, 492" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 400, 436" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 405, 382" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 412, 384" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 422, 392" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 424, 409" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 429, 416" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 429, 524" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 444, 382" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 450, 388" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 450, 388, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 462, 397" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 468, 388" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 469, 441" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 471, 383" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 477, 375, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 485, 382" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 492, 375, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 494, 423" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 497, 380" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 497, 380, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 5, 378, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 507, 381" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 555, 376" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 57, 466" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 571, 360" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 611, 472" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 654, 571" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 68, 440" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 70, 493" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 97, 486" value="1" type="GuiResourceData"/>
+<property name="scroll_count_1.sv, 99, 486" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="8" type="GuiMode"/>
+<property name="GuiMode" value="9" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="6" type="TclMode"/>
+<property name="TclMode" value="7" type="TclMode"/>
 </item>
 </section>
 </application>
