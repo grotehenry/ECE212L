@@ -5,7 +5,7 @@
 // 
 // Create Date: 02/23/2021 12:29:36 PM
 // Design Name: 
-// Module Name: fsm
+// Module Name: row_count
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
