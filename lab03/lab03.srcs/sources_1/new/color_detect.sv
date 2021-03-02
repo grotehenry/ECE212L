@@ -20,11 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module color_detect(input logic R2B, G2B, B2B, R, G, B, clk,
-    output logic R2 = 0, G2 = 0, B2 = 0);
-always_comb begin
-    if (R2B != 1'b0 || G2B != 1'b0 || B2B != 1'b0) R2 = R;
-    if (R2B != 1'b0 || G2B != 1'b0 || B2B != 1'b0) G2 = G;
-    if (R2B != 1'b0 || G2B != 1'b0 || B2B != 1'b0) B2 = B;
-end
+module color_detect(input logic [3:0]RGB2, 
+                    input logic [2:0] NextColor, 
+                    input logic [5:0] col,
+    output logic R2,G2,B2);
+always_comb 
+    begin
+    if(!RGB2&&col>=27){R2,G2,B2}=NextColor;
+    end
 endmodule
