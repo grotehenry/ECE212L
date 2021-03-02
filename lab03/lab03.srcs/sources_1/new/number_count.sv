@@ -23,6 +23,8 @@
 module number_count(input logic NEXTPB, clk, rst,
     output logic [5:0] offset = 0);
 always_ff @(posedge clk) begin
-    if (NEXTPB) offset += 6;
+    if(NEXTPB==9) offset<=0;
+    if (NEXTPB) offset <= NEXTPB+1;
 end
+
 endmodule
