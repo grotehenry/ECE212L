@@ -484,3 +484,21 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "number_
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
 // [GUI Memory]: 92 MB (+113kb) [00:34:53]
+// Elapsed time: 131 seconds
+selectCodeEditor("number_count.sv", 393, 421); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("number_count.sv", 284, 425); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("number_count.sv", 253, 459); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM2.sv", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("BRAM2.sv", 123, 466); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scroll_count_1.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("scroll_count_1.sv", 299, 502); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("scroll_count_1.sv", 283, 520); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("scroll_count_1.sv", 314, 475); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("scroll_count_1.sv", 291, 489); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 79 seconds
+selectCodeEditor("scroll_count_1.sv", 128, 394); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("scroll_count_1.sv", 469, 441); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("scroll_count_1.sv", 125, 404); // bH:N (JPanel:JComponent, cv:JFrame)

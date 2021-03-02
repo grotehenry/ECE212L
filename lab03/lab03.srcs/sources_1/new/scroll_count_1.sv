@@ -21,7 +21,7 @@
 
 
 module scroll_count_1(input logic [4:0] col, input logic enb, start1, rst, rstFSM, clk,
-    output logic [4:0] colOff1, output logic done1);
+    output logic [6:0] colOff1, output logic done1);
     logic count;
     always_ff @(posedge clk) begin
         if (rst || rstFSM) count = 0;
