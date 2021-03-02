@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module pixel_gen(input logic [4:0] col, 
-                 input logic [2:0] row, 
+module pixel_gen(input logic [4:0] col,
+                 input logic [2:0] row,
                  output logic R1, G1, B1, R2,G2, B2);
        always_comb 
          begin

@@ -24,3 +24,8 @@ add_files -norecurse {C:/Users/groteh/Desktop/lab03/lab03.srcs/sources_1/new/deb
 update_compile_order -fileset sources_1
 update_compile_order -fileset sim_1
 update_compile_order -fileset sources_1
+close [ open C:/Users/groteh/Desktop/lab03/lab03.srcs/sources_1/new/BRAM1.sv w ]
+add_files C:/Users/groteh/Desktop/lab03/lab03.srcs/sources_1/new/BRAM1.sv
+close [ open C:/Users/groteh/Desktop/lab03/lab03.srcs/sources_1/new/BRAM2.sv w ]
+add_files C:/Users/groteh/Desktop/lab03/lab03.srcs/sources_1/new/BRAM2.sv
+update_compile_order -fileset sources_1
