@@ -25,8 +25,8 @@ module scroll_count_1(input logic [4:0] col, input logic enb, start1, rst, rstFS
     logic count;
     always_ff @(posedge clk) begin
         if (rst || rstFSM) count = 0;
-        else if (start1 && enb) count++;
+        else if (start1 && enb&&!done1) count++;
     end
     assign colOff1 = count + col;
-    assign done1 = count==99;
+    assign done1 = count==67;
 endmodule
