@@ -20,13 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module scroll_count_1(input logic [4:0] col, input logic enb, start1, rst, rstFSM, clk,
+module scroll_count_1(input logic [4:0] col, input logic enb, start1, rst, rstC1, clk,
     output logic [6:0] colOff1, output logic done1);
     logic[5:0] count;
     always_ff @(posedge clk) begin
-        if (rst || rstFSM) count <= 0;
+        if (rst || rstC1) count <= 0;
         else if (start1 && enb&&!done1) count <= count+1;
     end
     assign colOff1 = count + col;
-    assign done1 = count==67;
+    assign done1 = count==62;
 endmodule
