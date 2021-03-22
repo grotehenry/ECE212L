@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1616429940">
+  <File Type="OPT-DCP" Name="LEDMatrixTopLevel_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="LEDMatrixTopLevel_route_status.pb"/>
+  <File Type="PA-TCL" Name="LEDMatrixTopLevel.tcl"/>
+  <File Type="RDI-RDI" Name="LEDMatrixTopLevel.vdi"/>
+  <File Type="PWROPT-DRC" Name="LEDMatrixTopLevel_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="LEDMatrixTopLevel_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="LEDMatrixTopLevel_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="LEDMatrixTopLevel_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="LEDMatrixTopLevel_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="LEDMatrixTopLevel.hwdef"/>
+  <File Type="OPT-TIMING" Name="LEDMatrixTopLevel_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="LEDMatrixTopLevel_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="LEDMatrixTopLevel_placed.dcp"/>
+  <File Type="PLACE-IO" Name="LEDMatrixTopLevel_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="LEDMatrixTopLevel_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="LEDMatrixTopLevel_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="LEDMatrixTopLevel_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="LEDMatrixTopLevel_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="LEDMatrixTopLevel_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="LEDMatrixTopLevel_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="LEDMatrixTopLevel_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="LEDMatrixTopLevel_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="LEDMatrixTopLevel_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="LEDMatrixTopLevel_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="LEDMatrixTopLevel_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="LEDMatrixTopLevel_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="LEDMatrixTopLevel_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="LEDMatrixTopLevel_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="LEDMatrixTopLevel_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="LEDMatrixTopLevel_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="LEDMatrixTopLevel_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="LEDMatrixTopLevel.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LEDMatrixTopLevel_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="LEDMatrixTopLevel_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="LEDMatrixTopLevel_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="LEDMatrixTopLevel_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="LEDMatrixTopLevel_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="LEDMatrixTopLevel_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="LEDMatrixTopLevel_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="LEDMatrixTopLevel_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="LEDMatrixTopLevel_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="LEDMatrixTopLevel_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="LEDMatrixTopLevel_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LEDMatrixTopLevel_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="LEDMatrixTopLevel_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="LEDMatrixTopLevel_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="LEDMatrixTopLevel_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="LEDMatrixTopLevel.bin"/>
+  <File Type="BITSTR-MSK" Name="LEDMatrixTopLevel.msk"/>
+  <File Type="BITSTR-RBT" Name="LEDMatrixTopLevel.rbt"/>
+  <File Type="BITSTR-NKY" Name="LEDMatrixTopLevel.nky"/>
+  <File Type="BITSTR-BMM" Name="LEDMatrixTopLevel_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="LEDMatrixTopLevel.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="LEDMatrixTopLevel.sysdef"/>
+  <File Type="BG-BGN" Name="LEDMatrixTopLevel.bgn"/>
+  <File Type="BG-DRC" Name="LEDMatrixTopLevel.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/DC.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/DC.sv"/>
+        <Attr Name="ImportTime" Val="1616426338"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/scroll_count_2.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/scroll_count_2.sv"/>
+        <Attr Name="ImportTime" Val="1616422828"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/scroll_count_1.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/scroll_count_1.sv"/>
+        <Attr Name="ImportTime" Val="1616422735"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/number_count.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/number_count.sv"/>
+        <Attr Name="ImportTime" Val="1616380461"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/digit_generator.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/digit_generator.sv"/>
+        <Attr Name="ImportTime" Val="1616425705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/chooser.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/chooser.sv"/>
+        <Attr Name="ImportTime" Val="1616421672"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BRAM2.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/BRAM2.sv"/>
+        <Attr Name="ImportTime" Val="1616423134"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BRAM1.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/BRAM1.sv"/>
+        <Attr Name="ImportTime" Val="1616422424"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/col_count.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/col_count.sv"/>
+        <Attr Name="ImportTime" Val="1616422217"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/row_count.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/row_count.sv"/>
+        <Attr Name="ImportTime" Val="1614714947"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fsm.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/fsm.sv"/>
+        <Attr Name="ImportTime" Val="1616426768"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delay_enb.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/delay_enb.sv"/>
+        <Attr Name="ImportTime" Val="1614104712"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pixel_gen.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/pixel_gen.sv"/>
+        <Attr Name="ImportTime" Val="1616426420"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sequencer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/sequencer.sv"/>
+        <Attr Name="ImportTime" Val="1616426778"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debounce.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/debounce.sv"/>
+        <Attr Name="ImportTime" Val="1614110784"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/single pulser.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/single pulser.sv"/>
+        <Attr Name="ImportTime" Val="1614104694"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LEDMatrixTopLevel.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/LEDMatrixTopLevel.sv"/>
+        <Attr Name="ImportTime" Val="1616379761"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bram.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/bram.v"/>
+        <Attr Name="ImportTime" Val="1614654804"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/color_detect.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/color_detect.sv"/>
+        <Attr Name="ImportTime" Val="1614721582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="LEDMatrixTopLevel"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/LEDMatrixConstraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
