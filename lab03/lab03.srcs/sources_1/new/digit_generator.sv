@@ -42,7 +42,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'hf000000f;	     
              3'd3 : col_out_white = 32'hf000000f;
              3'd4 : col_out_white = 32'h0ffffff0;	     
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -53,7 +53,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'hffffffff;	     
              3'd3 : col_out_white = 32'hf0000000;
              3'd4 : col_out_white = 32'h00000000;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -64,7 +64,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'hf00f000f;
              3'd3 : col_out_white = 32'hf000f00f;
              3'd4 : col_out_white = 32'hf0000ff0;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -75,7 +75,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'hf000f00f;	     
              3'd3 : col_out_white = 32'hf000f00f;
              3'd4 : col_out_white = 32'h0fff0ff0;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -86,7 +86,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'h0000f000;	     
              3'd3 : col_out_white = 32'h0000f000;
              3'd4 : col_out_white = 32'hffffffff;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -97,7 +97,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'hf000f00f;
              3'd3 : col_out_white = 32'hf000f00f;
              3'd4 : col_out_white = 32'h0fff000f;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -108,7 +108,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'hf000f0f0;	     
              3'd3 : col_out_white = 32'hf000f00f;
              3'd4 : col_out_white = 32'h0fff0000;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -119,7 +119,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'h00ff000f;	     
              3'd3 : col_out_white = 32'h0000ff0f;
              3'd4 : col_out_white = 32'h000000ff;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -130,7 +130,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'hf000f00f;	     
              3'd3 : col_out_white = 32'hf000f00f;
              3'd4 : col_out_white = 32'h0fff0ff0;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end
@@ -141,7 +141,7 @@ module digit_generator (input logic [3:0] num,
              3'd2 : col_out_white = 32'h0000f00f;	     
              3'd3 : col_out_white = 32'h0000f00f;
              3'd4 : col_out_white = 32'hfffffff0;
-             3'd5 : col_out_white = 32'h00000000;
+             //3'd5 : col_out_white = 32'h00000000;
              default : col_out_white = 32'h10100101; // error in blue!
            endcase // case (numcol_index)
         end

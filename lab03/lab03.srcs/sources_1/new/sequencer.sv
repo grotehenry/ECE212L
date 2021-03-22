@@ -27,13 +27,15 @@ module sequencer(
         output logic [4:0] col
     );
     //period of delay enable signal generation
-    parameter DELAY_NS = 500;
+    parameter DELAY_NS = 1000;
     //initializing internal wires
-    logic enb_c, enb_r, enb;
+    logic enb_c, enb_r, enb_d,rst_d,rst_c,doneC;
+    logic [5:0] d;
     //connecting blocks
-    fsm FSM(.clk,.rst,.enb,.count(col),.SCLK,.LAT,.BLANK,.enb_c,.enb_r);
+    fsm FSM(.clk,.rst,.enb,.doneC,.count(col),.d,.SCLK,.LAT,.BLANK,.enb_c,.enb_r,.enb_d,.rst_c,.rst_d);
     delay_enb#(.DELAY_NS(DELAY_NS))
     DENB(.clk,.rst,.clr(rst),.enb_out(enb));
     row_count RC(.clk,.rst,.enb,.enb_r,.row,.disp_row);
-    col_count CC(.clk,.rst,.enb,.enb_c,.col);
+    col_count CC(.clk,.rst(rst||rst_c),.enb,.enb_c,.col,.doneC);
+    delay_count DC(.clk,.rst(rst||rst_d),.enb,.enb_d,.d);
 endmodule

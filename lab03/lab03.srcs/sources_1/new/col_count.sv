@@ -20,11 +20,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module col_count(input logic clk, rst, enb,enb_c,
-           output logic[4:0] col
+           output logic[4:0] col,output logic doneC
            );
+        logic [5:0] colb;
        always_ff @(posedge clk)
                //reset when rst is high
-               if (rst) col <= 0;
+               if (rst||colb==32) colb <= 0;
                //add one to the output when the enb and enb_c is high
-               else if (enb&&enb_c) col <= col + 1;
+               else if (enb&&enb_c) colb <= colb + 1;
+       always_comb
+       begin
+        if(colb>=31)begin
+        col=colb[4:0];
+            doneC=1;
+        end
+        else begin
+            col=colb[4:0];
+            doneC=0;
+        end
+       end
 endmodule

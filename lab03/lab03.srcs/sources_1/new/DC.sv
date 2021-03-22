@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/02/2021 02:56:52 PM
+// Create Date: 03/22/2021 09:41:33 AM
 // Design Name: 
-// Module Name: number_count
+// Module Name: DC
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,12 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module number_count(input logic NEXTPB, clk, rst,
-    output logic [3:0] num);
-always_ff @(posedge clk) begin
-    if (rst) num<=0;
-    else if(num==10) num<=0;
-    else if (NEXTPB) num <= num+1;
-end
-
+module delay_count(input logic clk, rst, enb,enb_d,
+           output logic[7:0] d
+           );
+    always_ff @ (posedge clk)
+        if(rst)d<=0;
+        else if (enb&&enb_d)d<=d+1;
 endmodule

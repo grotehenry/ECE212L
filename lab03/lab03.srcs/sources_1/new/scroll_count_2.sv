@@ -20,21 +20,18 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module scroll_count_2(input logic enb,start2,clk,rstC2,rst,
+module scroll_count_2(input logic enb,clk,rst,
                       input logic [4:0] col,
-                      output logic done2,
-                      output logic [6:0] col2);
+                      output logic [9:0] col2);
     logic [6:0] wordOffset;
     always_ff @(posedge clk)
         begin
-            if(rst||rstC2)wordOffset<=0;
-            else if(enb&&start2&&!done2)wordOffset<=wordOffset+1;
+            if(rst)
+                begin
+                    wordOffset<=0;
+                end
+            else if(wordOffset>94&&enb)wordOffset<=0;
+            else if (enb) wordOffset<=wordOffset+1;
         end
-    always_comb
-        begin
-            col2=0;
-            if(col < 27)col2=wordOffset+col;
-            if(wordOffset == 96) done2 = 1;
-            else done2 = 0;
-        end
+    assign col2 = col+wordOffset;
 endmodule
