@@ -1,0 +1,26 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 013a434a35a746bfab4bc61321699baa --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mipstest_behav xil_defaultlib.mipstest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 31 differs from formal bit length 32 for port d1 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv" Line 6. Module datapath doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv" Line 6. Module datapath doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.floprEn(WIDTH=32)
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.mux4(WIDTH=32)
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mipstest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mipstest_behav

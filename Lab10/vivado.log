@@ -1,0 +1,660 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue May 04 15:05:53 2021
+# Process ID: 21340
+# Current directory: C:/Users/15002/OneDrive/ECE212/Lab10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5304 C:\Users\15002\OneDrive\ECE212\Lab10\Lab10.xpr
+# Log file: C:/Users/15002/OneDrive/ECE212/Lab10/vivado.log
+# Journal file: C:/Users/15002/OneDrive/ECE212/Lab10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: mips_multi
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:27 ; elapsed = 00:20:12 . Memory (MB): peak = 867.863 ; gain = 660.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_multi' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mips_multi.sv:6]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/controller.sv:23]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/maindec.sv:23]
+	Parameter FETCH bound to: 4'b0000 
+	Parameter DECODE bound to: 4'b0001 
+	Parameter MEMADR bound to: 4'b0010 
+	Parameter MEMRD bound to: 4'b0011 
+	Parameter MEMWB bound to: 4'b0100 
+	Parameter MEMWR bound to: 4'b0101 
+	Parameter RTYPEEX bound to: 4'b0110 
+	Parameter RTYPEWB bound to: 4'b0111 
+	Parameter BEQEX bound to: 4'b1000 
+	Parameter ADDIEX bound to: 4'b1001 
+	Parameter ADDIWB bound to: 4'b1010 
+	Parameter JEX bound to: 4'b1011 
+	Parameter LW bound to: 6'b100011 
+	Parameter SW bound to: 6'b101011 
+	Parameter RTYPE bound to: 6'b000000 
+	Parameter BEQ bound to: 6'b000100 
+	Parameter ADDI bound to: 6'b001000 
+	Parameter J bound to: 6'b000010 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/maindec.sv:64]
+WARNING: [Synth 8-87] always_comb on 'nextstate_reg' did not result in combinational logic [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/maindec.sv:65]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/maindec.sv:23]
+INFO: [Synth 8-638] synthesizing module 'aludec' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/aludec.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/aludec.sv:23]
+WARNING: [Synth 8-3848] Net pcen in module/entity controller does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/controller.sv:26]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/controller.sv:23]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (4#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:33]
+WARNING: [Synth 8-689] width (1) of port connection 'd' does not match port width (32) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:33]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (5#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:35]
+WARNING: [Synth 8-689] width (1) of port connection 'd' does not match port width (32) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:35]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:36]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (5#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (6#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:40]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:41]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'signext' (7#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (8#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-638] synthesizing module 'mux4' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux4' (9#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (10#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'bne' does not match port width (1) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (3) of port connection 'b' does not match port width (32) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (32) of port connection 'alucontrol' does not match port width (3) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (1) of port connection 'result' does not match port width (32) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-350] instance 'ALU' of module 'alu' requires 6 connections, but only 5 given [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:47]
+INFO: [Synth 8-638] synthesizing module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (11#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+WARNING: [Synth 8-689] width (34) of port connection 'd2' does not match port width (32) of module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3848] Net aluresult in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:22]
+WARNING: [Synth 8-3848] Net clkr in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3848] Net wd3 in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:25]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+INFO: [Synth 8-256] done synthesizing module 'mips_multi' (13#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mips_multi.sv:6]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port reset
+WARNING: [Synth 8-3331] design datapath has unconnected port memtoreg
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[24]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[23]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[22]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[21]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[20]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[19]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[18]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[17]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[16]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[15]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[14]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[13]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[12]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[11]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[10]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[9]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[8]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[7]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[6]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[5]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[4]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[3]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[2]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[1]
+WARNING: [Synth 8-3331] design controller has unconnected port pcen
+WARNING: [Synth 8-3331] design controller has unconnected port zero
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:28 ; elapsed = 00:20:13 . Memory (MB): peak = 904.266 ; gain = 696.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin rf:clk to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[31] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[30] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[29] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[28] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[27] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[26] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[25] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[24] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[23] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[22] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[21] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[20] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[19] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[18] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[17] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[16] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[15] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[14] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[13] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[12] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[11] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[10] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[9] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[8] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[7] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[6] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[5] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[4] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[3] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[2] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[1] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[0] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin ALU:alucontrol[2] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin ALU:alucontrol[1] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin ALU:alucontrol[0] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin ALUOUT:reset to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:47]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[31] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[30] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[29] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[28] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[27] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[26] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[25] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[24] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[23] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[22] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[21] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[20] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[19] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[18] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[17] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[16] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[15] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[14] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[13] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[12] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[11] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[10] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[9] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[8] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[7] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[6] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[5] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[4] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[3] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[2] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[1] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3295] tying undriven pin pcSrcMux:d0[0] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:28 ; elapsed = 00:20:13 . Memory (MB): peak = 904.266 ; gain = 696.883
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:41 ; elapsed = 00:20:21 . Memory (MB): peak = 1217.219 ; gain = 1009.836
+33 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1217.219 ; gain = 372.172
+set_property top datapath [current_fileset]
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:52 ; elapsed = 00:20:42 . Memory (MB): peak = 1219.242 ; gain = 1011.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:33]
+WARNING: [Synth 8-689] width (1) of port connection 'd' does not match port width (32) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:33]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:35]
+WARNING: [Synth 8-689] width (1) of port connection 'd' does not match port width (32) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:35]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:36]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (3#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:40]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:41]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'signext' (4#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-638] synthesizing module 'mux4' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux4' (6#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (7#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'bne' does not match port width (1) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (3) of port connection 'b' does not match port width (32) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (32) of port connection 'alucontrol' does not match port width (3) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (1) of port connection 'result' does not match port width (32) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-350] instance 'ALU' of module 'alu' requires 6 connections, but only 5 given [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:47]
+INFO: [Synth 8-638] synthesizing module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (8#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+WARNING: [Synth 8-689] width (34) of port connection 'd2' does not match port width (32) of module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3848] Net aluresult in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:22]
+WARNING: [Synth 8-3848] Net clkr in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3848] Net wd3 in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:25]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (9#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port reset
+WARNING: [Synth 8-3331] design datapath has unconnected port memtoreg
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[24]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[23]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[22]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[21]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[20]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[19]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[18]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[17]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[16]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[15]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[14]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[13]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[12]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[11]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[10]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[9]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[8]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[7]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[6]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[5]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[4]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[3]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[2]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:52 ; elapsed = 00:20:43 . Memory (MB): peak = 1219.242 ; gain = 1011.859
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin rf:clk to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[31] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[30] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[29] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[28] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[27] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[26] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[25] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[24] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[23] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[22] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[21] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[20] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[19] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[18] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[17] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[16] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[15] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[14] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[13] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[12] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[11] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[10] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[9] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[8] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[7] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[6] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[5] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[4] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[3] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin rf:wd3[2] to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:52 ; elapsed = 00:20:43 . Memory (MB): peak = 1219.242 ; gain = 1011.859
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1277.488 ; gain = 58.246
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:26 ; elapsed = 00:25:38 . Memory (MB): peak = 1277.488 ; gain = 1070.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:33]
+WARNING: [Synth 8-689] width (1) of port connection 'd' does not match port width (32) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:33]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:35]
+WARNING: [Synth 8-689] width (1) of port connection 'd' does not match port width (32) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:35]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:36]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (3#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:40]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:41]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'signext' (4#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-638] synthesizing module 'mux4' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux4' (6#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (7#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'bne' does not match port width (1) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (3) of port connection 'b' does not match port width (32) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (32) of port connection 'alucontrol' does not match port width (3) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (1) of port connection 'result' does not match port width (32) of module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-350] instance 'ALU' of module 'alu' requires 6 connections, but only 5 given [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:46]
+WARNING: [Synth 8-689] width (32) of port connection 'reset' does not match port width (1) of module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:47]
+INFO: [Synth 8-638] synthesizing module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (8#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+WARNING: [Synth 8-689] width (34) of port connection 'd2' does not match port width (32) of module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:48]
+WARNING: [Synth 8-3848] Net aluresult in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:22]
+WARNING: [Synth 8-3848] Net clkr in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:38]
+WARNING: [Synth 8-3848] Net wd3 in module/entity datapath does not have driver. [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:25]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (9#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port reset
+WARNING: [Synth 8-3331] design datapath has unconnected port memtoreg
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[24]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[23]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[22]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[21]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[20]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[19]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[18]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[17]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[16]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[15]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[14]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[13]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[12]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[11]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[10]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[9]
+WARNING: [Synth 8-3331] design datapath has unconnected port readdata[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:26 ; elapsed = 00:25:39 . Memory (MB): peak = 1277.488 ; gain = 1070.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:27 ; elapsed = 00:25:39 . Memory (MB): peak = 1277.488 ; gain = 1070.105
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1303.754 ; gain = 26.266
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:24 ; elapsed = 00:40:10 . Memory (MB): peak = 1303.754 ; gain = 1096.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+ERROR: [Synth 8-344] instance 'MDR' has duplicate port connection for port 'clk' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:36]
+WARNING: [Synth 8-350] instance 'MDR' of module 'flopr' requires 4 connections, but only 3 given [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:36]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+ERROR: [Synth 8-285] failed synthesizing module 'mux2__parameterized0' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+ERROR: [Synth 8-285] failed synthesizing module 'datapath' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:25 ; elapsed = 00:40:10 . Memory (MB): peak = 1303.754 ; gain = 1096.371
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:36 ; elapsed = 00:41:12 . Memory (MB): peak = 1303.754 ; gain = 1096.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (3#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'signext' (4#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-638] synthesizing module 'mux4' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux4' (6#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (7#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+WARNING: [Synth 8-350] instance 'ALU' of module 'alu' requires 6 connections, but only 5 given [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:47]
+INFO: [Synth 8-638] synthesizing module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (8#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+WARNING: [Synth 8-689] width (34) of port connection 'd2' does not match port width (32) of module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:49]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (9#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:36 ; elapsed = 00:41:13 . Memory (MB): peak = 1303.754 ; gain = 1096.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ALU:bne to constant 0 [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:36 ; elapsed = 00:41:13 . Memory (MB): peak = 1303.754 ; gain = 1096.371
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1324.289 ; gain = 20.535
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:01 ; elapsed = 00:48:58 . Memory (MB): peak = 1324.289 ; gain = 1116.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (3#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'signext' (4#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-638] synthesizing module 'mux4' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux4' (6#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (7#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (8#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+WARNING: [Synth 8-689] width (34) of port connection 'd2' does not match port width (32) of module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:49]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (9#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:02 ; elapsed = 00:48:59 . Memory (MB): peak = 1324.289 ; gain = 1116.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:02 ; elapsed = 00:48:59 . Memory (MB): peak = 1324.289 ; gain = 1116.906
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1336.242 ; gain = 11.953
+ERROR: [Common 17-180] Spawn failed: No error
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:23 ; elapsed = 00:50:23 . Memory (MB): peak = 1336.242 ; gain = 1128.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/flopr.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (2#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (3#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/regfile.sv:23]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'signext' (4#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/signext.sv:23]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/sl2.sv:24]
+INFO: [Synth 8-638] synthesizing module 'mux4' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux4' (6#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (7#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (8#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/mux3.sv:23]
+WARNING: [Synth 8-689] width (34) of port connection 'd2' does not match port width (32) of module 'mux3' [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:49]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (9#1) [C:/Users/15002/OneDrive/ECE212/Lab10/Lab10.srcs/sources_1/new/datapath.sv:6]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:23 ; elapsed = 00:50:24 . Memory (MB): peak = 1336.242 ; gain = 1128.859
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:23 ; elapsed = 00:50:24 . Memory (MB): peak = 1336.242 ; gain = 1128.859
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.980 ; gain = 6.738
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 05 01:17:53 2021...
